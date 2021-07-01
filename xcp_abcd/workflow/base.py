@@ -308,7 +308,7 @@ XCP is built with *Nipype* {nipype_ver} [@nipype1; @nipype2].
 Many internal operations of *xcp_abcd* use *Nibabel* [@nilearn], *numpy* 
 [@harris2020array] and  *scipy* [@2020SciPy-NMeth], for majority of the functions.
 For more details of the pipeline, 
-see  the *xcp_abcd* website (coming).
+see  the *xcp_abcd* website https://xcp-abcd.readthedocs.io.
 
 
 #### Copyright Waiver
