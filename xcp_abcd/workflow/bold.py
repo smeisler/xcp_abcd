@@ -244,7 +244,7 @@ Residual timeseries from this regression were then band pass filtered within the
                  brain_template=brain_template,name="fcons_ts_wf")
 
     alff_compute_wf = init_compute_alff_wf(mem_gb=mem_gbx['resampled'], TR=TR,
-                   lowpass=upper_bpf,highpass=lower_bpf,smoothing=smoothing, cifti=False,
+                   lowpass=lower_bpf,highpass=upper_bpf,smoothing=smoothing, cifti=False,
                     name="compute_alff_wf" )
 
     reho_compute_wf = init_3d_reho_wf(mem_gb=mem_gbx['resampled'],smoothing=smoothing,
