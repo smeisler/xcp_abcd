@@ -115,7 +115,7 @@ and the mean square root of power spectral was calculated at each voxel to yield
     if smoothing:
         if not cifti:
             workflow.__desc__ = workflow.__desc__ + """ \
-The ALFF smoothed with FSL and kernel size of {kernelsize} mm. 
+The ALFF was smoothed with FSL and kernel size of {kernelsize} mm. 
 """         .format(kernelsize=str(smoothing))
             smooth_data  = pe.Node(Smooth(output_type = 'NIFTI_GZ',fwhm = smoothing),
                    name="ciftismoothing", mem_gb=mem_gb )
@@ -253,7 +253,6 @@ def init_3d_reho_wf(
 
     workflow = Workflow(name=name)
     workflow.__desc__ = """ 
-
 The regional homogeneity (ReHo) for the processed bold was computed with 
 AFNI *3dReHo* [@afni] with vertices neighborhood. 
 """ 
